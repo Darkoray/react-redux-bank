@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# 🏦 The React-Redux Bank ⚛️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A banking application built with React and Redux. Users can create customers, accounts, and perform various operations on accounts. The app displays the current balance of the account.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## How to Use
 
-### `npm start`
+- Go to the website: [The Redux Bank](https://darkoray.github.io/redux-intro/)
+- Create a customer with their details
+- Create a new account for the customer
+- Perform account operations like deposit, withdraw, and check the balance
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Features
 
-### `npm test`
+- **Create a Customer**: Users can create new customers with their details.
+- **Create an Account**: Users can create new accounts for the customer.
+- **Account Operations**: Users can deposit money into their account, withdraw money from their account, and check the balance of their account.
+- **Balance Display**: The app displays the current balance of the account.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🖼️ Layouts
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+These components define the structural foundation of the application.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `App.jsx`: The main component that renders the different features of the bank.
+- `CreateCustomer.jsx`: A form that allows users to create new customers.
+- `Customer.jsx`: Displays the details of a customer and the accounts associated with the customer.
+- `AccountOperations.jsx`: A form that allows users to perform operations on an account.
+- `BalanceDisplay.jsx`: Displays the current balance of the account.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## ⚙️ Utilities
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+These are smaller, reusable components for general use.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `Balance`: A component that displays the current balance of the account.
+- `Input`: A reusable input component.
+- `Button`: A reusable button component.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## ![1769618540358](1769618540358.png)
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📂 Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+src/
+├─ features/
+│  ├─ accounts/
+│  │  ├─ AccountOperations.jsx
+│  │  ├─ accountSlice.jsx
+│  │  └─ BalanceDisplay.jsx
+│  └─ customers/
+│     ├─ CreateCustomer.jsx
+│     ├─ Customer.jsx
+│     └─ customerSlice.jsx
+├─ App.jsx
+├─ index.css
+├─ index.js
+└─ store.jsx
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📄 License & Credits
 
-### Analyzing the Bundle Size
+This project is provided for **learning purposes only**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+© by You. You can use it for your portfolio or learning. Do not use it to teach or redistribute as your own work.
