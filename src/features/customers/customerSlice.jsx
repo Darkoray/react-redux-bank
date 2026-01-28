@@ -1,35 +1,35 @@
-const initialStateCustomer = {
+import { createSlice } from '@reduxjs/toolkit';
+
+const initialState = {
   fullName: '',
   nationalId: '',
   createdAt: '',
 };
 
-function customerReducer(state = initialStateCustomer, action) {
-  switch (action.type) {
-    case 'customer/createCustomer':
-      return {
-        ...state,
-        fullName: action.payload.fullName,
-        nationalId: action.payload.nationalId,
-        createdAt: action.payload.createdAt,
-      };
+const customerSlice = createSlice({
+  name: 'customer',
+  initialState,
+  reducers: {
+    createCustomer: {
+      prepare(fullName, nationalId) {
+        return {
+          payload: { fullName, nationalId, createdAt: new Date().toISOString() },
+        };
+      },
 
-    case 'customer/updateName':
-      return { ...state, fullName: action.payload };
+      reducer(state, action) {
+        state.fullName = action.payload.fullName;
+        state.nationalId = action.payload.nationalId;
+        state.createdAt = action.payload.createdAt;
+      },
+    },
 
-    default:
-      return state;
-  }
-}
-
-export const createCustomer = (fullName, nationalId) => ({
-  type: 'customer/createCustomer',
-  payload: { fullName, nationalId, createdAt: new Date().toISOString() },
+    updateName(state, action) {
+      state.fullName = action.payload;
+    },
+  },
 });
 
-export const updateName = fullName => ({
-  type: 'customer/updateName',
-  payload: fullName,
-});
+export const { createCustomer, updateName } = customerSlice.actions;
 
-export default customerReducer;
+export default customerSlice.reducer;
