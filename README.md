@@ -44,6 +44,14 @@ These are smaller, reusable components for general use.
 
 ---
 
+## 🛠️ Technologies Used
+
+- **React 18** : Modern JavaScript library for building user interfaces.
+- **Redux** : Predictable state container for managing global state.
+- **Redux Toolkit** : A set of APIs to simplify using Redux with React.
+
+---
+
 ## ![1769618540358](1769618540358.png)
 
 ---
