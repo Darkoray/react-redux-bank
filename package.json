@@ -26,6 +26,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  "homepage": "https://darkoray.github.io/react-redux-bank/",
   "eslintConfig": {
     "extends": [
       "react-app",
