@@ -1,4 +1,4 @@
-# 🏦 The React-Redux Bank ⚛️
+# 🏦 The React-Redux Bank ⚛️ [![wakatime](https://wakatime.com/badge/user/72594c02-0009-4d68-ba8b-6bc52b500d86/project/20a8da7e-ab96-448f-9231-f1b69c52bbf3.svg)](https://wakatime.com/badge/user/72594c02-0009-4d68-ba8b-6bc52b500d86/project/20a8da7e-ab96-448f-9231-f1b69c52bbf3)
 
 A banking application built with React and Redux. Users can create customers, accounts, and perform various operations on accounts. The app displays the current balance of the account.
 
@@ -51,8 +51,6 @@ These are smaller, reusable components for general use.
 - **Redux Toolkit** : A set of APIs to simplify using Redux with React.
 
 ---
-
-## ![1769618540358](1769618540358.png)
 
 ---
 
